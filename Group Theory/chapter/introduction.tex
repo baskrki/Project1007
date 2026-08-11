@@ -37,7 +37,7 @@
 \end{proof}
 
 \begin{problem}
-    Prove that multiplication of residue classes in $\mathbb{Z}/n\mathbb{Z}$ is associative.
+    Prove that multiplication of residue classes in $\ZZ/n\ZZ$ is associative.
 \end{problem}
 
 \begin{proof}
@@ -51,4 +51,15 @@
         &= [a \cdot b] \cdot [c] \\
         &= ([a] \cdot [b]) \cdot [c]
     \end{align*}
+\end{proof}
+
+\begin{problem}
+    Prove for all $n > 1$ that $\ZZ/n\ZZ$ is not a group under multiplication of residue classes.
+\end{problem}
+
+\begin{proof}
+    There is no multiplicative inverse for $[a]$ with $\gcd(a,n)>1$. The proof for it pretty trivial,
+    if there was a inverse, it would mean that
+    \[ a \cdot b \equiv 1 \pmod{n} \implies 0 \equiv 1 \pmod{\gcd(a,n)} \]
+    That's a contradiction. 
 \end{proof}
