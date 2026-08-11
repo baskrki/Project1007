@@ -5,11 +5,11 @@
 \begin{problem}
     Determine which of the following binary operations are associative:
     \begin{enumerate}
-        \item the operation on $\mathbb{Z}$ defined by $a*b = a - b$
-        \item the operation on $\mathbb{R}$ defined by $a*b = a + b + ab$
-        \item the operation on $\mathbb{Q}$ defined by $a*b = \frac{a+b}{5}$
-        \item the operation on $\mathbb{Z} \times \mathbb{Z}$ defined by $(a,b)*(c,d) = (ad+bc, bd)$
-        \item the operation on $\mathbb{Q}-\{0\}$ defined by $a*b = \frac{a}{b}$
+        \item the operation on $\ZZ$ defined by $a*b = a - b$
+        \item the operation on $\RR$ defined by $a*b = a + b + ab$
+        \item the operation on $\QQ$ defined by $a*b = \frac{a+b}{5}$
+        \item the operation on $\ZZ \times \ZZ$ defined by $(a,b)*(c,d) = (ad+bc, bd)$
+        \item the operation on $\QQ-\{0\}$ defined by $a*b = \frac{a}{b}$
     \end{enumerate}
 \end{problem}
 
@@ -19,4 +19,18 @@
     Rest of them are pretty similar.
 \end{proof}
 
+\begin{problem}
+    Prove that addition of residue classes in $\ZZ/n\ZZ$ is associative.
+\end{problem}
 
+\begin{proof}
+    By definition of residue addition,
+    \[ [a]+[b]= [a+b] \]
+    Therefore, we get the following.
+    \begin{align*}
+        [a]+([b]+[c])&=[a]+[b+c]\\
+        &= [a+b+c] \\
+        &= [a+b]+[c] \\
+        &= ([a]+[b])+[c]
+    \end{align*}
+\end{proof}
