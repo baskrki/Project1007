@@ -29,8 +29,26 @@
     Therefore, we get the following.
     \begin{align*}
         [a]+([b]+[c])&=[a]+[b+c]\\
-        &= [a+b+c] \\
+        &= [a+(b+c)] \\
+        &= [(a+b)+c] \\
         &= [a+b]+[c] \\
         &= ([a]+[b])+[c]
+    \end{align*}
+\end{proof}
+
+\begin{problem}
+    Prove that multiplication of residue classes in $\mathbb{Z}/n\mathbb{Z}$ is associative.
+\end{problem}
+
+\begin{proof}
+     By definition of residue multiplication,
+    \[ [a]\cdot[b]= [a \cdot b] \]
+    Therefore, we get the following.
+    \begin{align*}
+        [a]\cdot ([b] \cdot [c]) &= [a]\cdot [b \cdot c] \\
+        &= [a \cdot (b \cdot c) ] \\
+        &= [(a \cdot b) \cdot c] \\
+        &= [a \cdot b] \cdot [c] \\
+        &= ([a] \cdot [b]) \cdot [c]
     \end{align*}
 \end{proof}
