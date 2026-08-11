@@ -3,5 +3,20 @@
 \section{Introduction}
 
 \begin{problem}
-    
+    Determine which of the following binary operations are associative:
+    \begin{enumerate}
+        \item the operation on $\mathbb{Z}$ defined by $a*b = a - b$
+        \item the operation on $\mathbb{R}$ defined by $a*b = a + b + ab$
+        \item the operation on $\mathbb{Q}$ defined by $a*b = \frac{a+b}{5}$
+        \item the operation on $\mathbb{Z} \times \mathbb{Z}$ defined by $(a,b)*(c,d) = (ad+bc, bd)$
+        \item the operation on $\mathbb{Q}-\{0\}$ defined by $a*b = \frac{a}{b}$
+    \end{enumerate}
 \end{problem}
+
+\begin{proof}
+    This exercise is pretty trivial as we just have to compute $a*(b*c)=(a*b)*c$.
+    For $1.$, $a*(b*c)=a*(b-c)=a-(b-c)=a-b+c$ but $(a*b)*c=(a-b)*c=(a-b)-c=a-b-c$.
+    Rest of them are pretty similar.
+\end{proof}
+
+
