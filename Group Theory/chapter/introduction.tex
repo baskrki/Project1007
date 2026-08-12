@@ -166,4 +166,14 @@
     for $[6]$ its going to be $2$. For $[3],[9]$ its going to be $4$. For $[0]$ its going to be $1$.
 \end{proof}
 
+\begin{problem}
+    Prove that $(a_1 a_2 \dots a_n)^{-1} = a_n^{-1} a_{n-1}^{-1} \dots a_1^{-1}$ for all $a_1, a_2, \dots, a_n \in G$.
+\end{problem}
 
+\begin{proof}
+    We will use strong induction. Its obviously true for $n=1$ and assume its true for $n=2,\ldots,k$. Then,
+    \begin{align*}
+        ((a_1 \cdots a_{k}) \cdot a_{k+1})^{-1} &= a_{k+1}^{-1} (a_1 \cdots a_k)^{-1} \\
+        &= a_{k+1}^{-1} a_k^{-1} \cdots a_1^{-1}
+    \end{align*}
+\end{proof}
