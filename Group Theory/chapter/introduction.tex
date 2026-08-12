@@ -145,5 +145,14 @@
     The inverse for $a+b \sqrt{2}$ is $\displaystyle \frac{a}{a^2-2b^2} - \frac{b}{a^2-2b^2} \sqrt{2}$.
     The identity is $1+0 \cdot \sqrt{2}=1$. And its closed under multiplication as 
     \[ (a+b\sqrt{2})(c+d\sqrt{2})= (ac+2bd)+(ad+bc)\sqrt{2} \]
+\end{proof}
 
+\begin{problem}
+    Prove that a finite group is abelian if and only if its group table is a symmetric matrix.
+\end{problem}
+
+\begin{proof}
+    Let $G = \{g_1,\ldots,g_n\}$ be an group with $n$ elements. Then we define the group matrix to be a $n \times n$ square matrix 
+    with entires $a_{ij} = g_i g_j$. So, if its G is abelian then $a_{ij}=g_i g_j = g_j g_i = a_{ji}$, so its symmetric. 
+    If the group table is symmetric then $a_{ij}=a_{ji} \implies g_ig_j = g_jg_i$ for all $1 \le i,j \le n$. Thus, its abelian. 
 \end{proof}
