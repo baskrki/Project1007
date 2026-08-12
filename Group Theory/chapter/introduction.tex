@@ -126,3 +126,24 @@
     For $G$ under addition, if it was a group then, $1 \in G$ as $1^1 = 1 \in G \implies 1+1 = 2 \in G$ but there does not exist any integer
     $n$ such that $2^n=1$.   
 \end{proof}
+
+\begin{problem}
+    Let $G = \{a + b\sqrt{2} \in \mathbb{R} \mid a, b \in \mathbb{Q}\}$.
+    \begin{enumerate}
+        \item Prove that $G$ is a group under addition.
+        \item Prove that the nonzero elements of $G$ are a group under multiplication. 
+    \end{enumerate}
+\end{problem}
+
+\begin{proof}
+    We know reals are associative so the elements of $G$ are associative under addition. The inverse for $a+b \sqrt{2}$ is $(-a)+(-b)\sqrt{2}$.
+    It is also closed as,
+    \[ a+b\sqrt{2} + c + d\sqrt{2} = (a+c)+(b+d)\sqrt{2} \]
+    The identity is going to  be $0+0\cdot \sqrt{2}=0$.
+
+    We know reals are associative so the elements of $G$ are associative under multiplication. 
+    The inverse for $a+b \sqrt{2}$ is $\displaystyle \frac{a}{a^2-2b^2} - \frac{b}{a^2-2b^2} \sqrt{2}$.
+    The identity is $1+0 \cdot \sqrt{2}=1$. And its closed under multiplication as 
+    \[ (a+b\sqrt{2})(c+d\sqrt{2})= (ac+2bd)+(ad+bc)\sqrt{2} \]
+
+\end{proof}
