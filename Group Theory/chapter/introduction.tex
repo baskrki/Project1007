@@ -194,3 +194,13 @@
 \begin{proof}
     If $|x|=n$ then $x^n=1 \implies x^{n-1} * x^{1} = 1 \implies x^{n-1} = 1 * x^{-1} = x^{-1}$.
 \end{proof}
+
+\begin{problem}
+ For $x$ an element in $G$ show that $x$ and $x^{-1}$ have the same order.
+\end{problem}
+
+\begin{proof}
+    If $|x|= \infty$ then $|x^{-1}|=\infty$ because if $|x^{-1}|$ where to be finite it would lead to a pretty obvious contradiction.
+    If $|x|=k$ then $x^k=1 \implies x^{-k}=1$ so $|x^{-1}| \le k$ and if $|x^{-1}| = i < k$ then $x^{-i}=1 \implies x^{i}=1 
+    \implies k \le i < k$ which is a contradiction.
+\end{proof}
