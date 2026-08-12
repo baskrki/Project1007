@@ -107,3 +107,22 @@
         &= (x*y)*z
     \end{align*}
 \end{proof}
+
+\begin{problem}
+    Let $G = \{z \in \mathbb{C} \mid z^n = 1 \text{ for some } n \in \mathbb{Z}^+\}$.
+    \begin{enumerate}
+        \item Prove that $G$ is a group under multiplication (called the group of roots of unity in $\mathbb{C}$).
+        \item Prove that $G$ is not a group under addition.
+    \end{enumerate}
+\end{problem}
+
+\begin{proof}
+    For $G$ under multiplication, we know that for all $z_1,z_2,z_3 \in G$ we have
+    \[ z_1 \cdot (z_2 \cdot z_3) = (z_1 \cdot z_2) \cdot z_3 \]
+    Also, it is closed as for all $z_1, z_2 \in G$ we have $z_1^n=1$ and $z_2^k=1$ so 
+    \[ (z_1 \cdot z_2)^{\text{lcm}(n,k)}=1 \]
+    Now, for inverse of a $z \in G$ just take $1/z$. As $(1/z)^n=1/1=1$ so $1/z \in G$. Also, $z \cdot 1/z = 1$.
+
+    For $G$ under addition, if it was a group then, $1 \in G$ as $1^1 = 1 \in G \implies 1+1 = 2 \in G$ but there does not exist any integer
+    $n$ such that $2^n=1$.   
+\end{proof}
