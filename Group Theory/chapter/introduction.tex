@@ -89,7 +89,7 @@
 \end{proof}
 
 \begin{problem}
-    Let $G = \{x \in \mathbb{R} \mid 0 \le x < 1\}$ and for $x, y \in G$ let $x*y$ be the fractional part of $x+y$ 
+    Let $G = \{x \in \RR \mid 0 \le x < 1\}$ and for $x, y \in G$ let $x*y$ be the fractional part of $x+y$ 
     (i.e., $x*y = x+y - \floor{x+y}$ where $\floor{a}$ is the greatest integer less than or equal to $a$).
     Prove that $*$ is a well defined binary operation on $G$ and that $G$ is an abelian group under $*$ (called the real numbers mod 1).
 \end{problem}
@@ -109,9 +109,9 @@
 \end{proof}
 
 \begin{problem}
-    Let $G = \{z \in \mathbb{C} \mid z^n = 1 \text{ for some } n \in \mathbb{Z}^+\}$.
+    Let $G = \{z \in \CC \mid z^n = 1 \text{ for some } n \in \ZZ^+\}$.
     \begin{enumerate}
-        \item Prove that $G$ is a group under multiplication (called the group of roots of unity in $\mathbb{C}$).
+        \item Prove that $G$ is a group under multiplication (called the group of roots of unity in $\CC$).
         \item Prove that $G$ is not a group under addition.
     \end{enumerate}
 \end{problem}
@@ -128,7 +128,7 @@
 \end{proof}
 
 \begin{problem}
-    Let $G = \{a + b\sqrt{2} \in \mathbb{R} \mid a, b \in \mathbb{Q}\}$.
+    Let $G = \{a + b\sqrt{2} \in \RR \mid a, b \in \QQ\}$.
     \begin{enumerate}
         \item Prove that $G$ is a group under addition.
         \item Prove that the nonzero elements of $G$ are a group under multiplication. 
@@ -239,4 +239,14 @@
 \begin{proof}
     If $|x|=n$ and $n=st$ then $x^n=1 \Rightarrow x^{st}=1 \Rightarrow (x^s)^t=1$. Thus, $|x^s| \le t$.
     Suppose $|x^s|=k<t$ then $x^{sk}=1$ but $n=st \le sk \Rightarrow t \le k < t$. Thus, $|x^s|=t$.
+\end{proof}
+
+\begin{problem}
+    Prove that if $x^2 = 1$ for all $x \in G$ then $G$ is abelian.
+\end{problem}
+
+\begin{proof}
+    We need to prove that $xy=yx$ for all $y,x \in G$. We know that $x^2=y^2=1$ so 
+    \[ xy=x^{-1}y^{-1}=(yx)^{-1}=yx \]
+    as $(xy)^2=1$.
 \end{proof}
