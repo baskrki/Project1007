@@ -204,3 +204,23 @@
     If $|x|=k$ then $x^k=1 \implies x^{-k}=1$ so $|x^{-1}| \le k$ and if $|x^{-1}| = i < k$ then $x^{-i}=1 \implies x^{i}=1 
     \implies k \le i < k$ which is a contradiction.
 \end{proof}
+
+\begin{problem}
+    Let $G$ be a finite group and let $x$ be an element of $G$ of order $n$. Prove that if $n$ is odd, then $x = (x^2)^k$ for some $k$.
+\end{problem}
+
+\begin{proof}
+    Since $n$ is the order of the element $x$, we have $x^n=1 \Rightarrow x^{n+1}=x$. Since $n+1 = 2k$ for some $k \in \ZZ^+$ we have
+    \[ x^{2k} = x \Rightarrow (x^2)^k=x \]  
+\end{proof}
+
+\begin{problem}
+    If $x$ and $g$ are elements of the group $G$, prove that $|x| = |g^{-1}xg|$. Deduce that $|ab| = |ba|$ for all $a, b \in G$.
+\end{problem}
+
+\begin{proof}
+    We can easily prove through induction that $(g^{-1}xg)^k=g^{-1}x^kg$. Now let $|x|=n$ and let $|g^{-1}xg|=m$ and suppose
+    $m < n$ then 
+    \[ g^{-1}x^mg = e \Rightarrow x^m=e \Rightarrow |x| = n \le m < n \]
+    Thus, $m \ge n$ and $g^{-1}x^ng=g^{-1} e g = e$ so we have $|g^{-1}xg|=n=|x|$.
+\end{proof}
