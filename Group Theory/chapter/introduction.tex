@@ -326,3 +326,18 @@
     Thus, $a^n=1$ and $b^n=1$. Therefore, $n \mid |a|$ and $n \mid |b|$. Thus, $n \mid \text{lcm}(|a|,|b|)$ which implies that
     $n \ge \text{lcm}(|a|,|b|)$. Now, $n=\text{lcm}(|a|,|b|)$ satisfies $(a,b)^n=(1,1)$. 
 \end{proof}
+
+\begin{problem}
+    Prove that any finite group $G$ of even order contains an element of order 2.
+\end{problem}
+
+\begin{proof}
+    Let $\iota(G)=\{g \in G \mid g \neq g^{-1}\}$. Then notice that order of $\iota(G)$ is even as it contains both $g,g^{-1}$.
+    Then, the order of $G-\iota(G)$ is at least $2$ because the order of $G$ is even. Thus, we have a non identity element 
+    $x \in G - \iota(G)$ such that $x^2=1$.  
+\end{proof}
+
+\begin{problem}
+    If $x$ is an element of finite order $n$ in $G$, prove that the elements $1, x, x^2, \ldots, x^{n-1}$ are all distinct.
+    Deduce that $|x| \le |G|$.
+\end{problem}
