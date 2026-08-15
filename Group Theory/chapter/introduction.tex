@@ -321,7 +321,7 @@
     Now, suppose $|(a,b)|=n$ then,
     \begin{align*}
         (a,b)^n &= (1,1) \\
-        \implies (a^n,b^n) &= (1,1) \\
+        \implies (a^n,b^n) &= (1,1)
     \end{align*}
     Thus, $a^n=1$ and $b^n=1$. Therefore, $n \mid |a|$ and $n \mid |b|$. Thus, $n \mid \text{lcm}(|a|,|b|)$ which implies that
     $n \ge \text{lcm}(|a|,|b|)$. Now, $n=\text{lcm}(|a|,|b|)$ satisfies $(a,b)^n=(1,1)$. 
@@ -338,6 +338,16 @@
 \end{proof}
 
 \begin{problem}
-    If $x$ is an element of finite order $n$ in $G$, prove that the elements $1, x, x^2, \ldots, x^{n-1}$ are all distinct.
+    If $x$ is an element of finite order $n$ in $G$, prove that the elements of
+    \[ C=\{x^k \mid 0 \le k \le n-1\} \]
+    are all distinct.
     Deduce that $|x| \le |G|$.
 \end{problem}
+
+\begin{proof}
+    Suppose that for $a \neq b$ we have,
+    \[ x^a = x^b \]
+    Then, $x^{a-b}=1$ which implies $n \mid a-b$ but $a-b < |a| < n$ which is a contradiction. Thus, all the elements of $C$ are distinct.
+    And since $C$ is a subgroup we have 
+    \[ |x|=n=|C| \le |G| \]
+\end{proof}
