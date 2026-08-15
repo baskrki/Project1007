@@ -362,7 +362,27 @@
 
 \begin{proof}
     If $n$ is odd and $x^{i} = x^{-i}$ then $x^{2i}=1$ which implies $n \mid 2i \implies n \mid i$
-    but thats not possible as $i < n$.
+    but thats not possible as $i < n$. If $n=2k$ and $x^{i}=x^{-i} \Rightarrow x^{2i}=1$ which implies $2k \mid 2i$ and
+    since $2 \le 2i < 2n$ we have $2i=n$.
+\end{proof}
 
-    If $n=2k$ and $x^{i}=x^{-i} \Rightarrow x^{2i}=1$ which implies $2k \mid 2i$ and since $2 \le 2i < 2n$ we have $2i=n$.
+\begin{problem}
+    Assume $G = \{1, a, b, c\}$ is a group of order 4 with identity 1. Assume also that $G$ has no elements of order 4.
+    Prove that there is a unique group table for $G$. Deduce that $G$ is abelian.
+\end{problem}
+
+\begin{proof}
+    Notice that $a^2=b^2=c^2=1$, as $|a| \mid |G|=4$ so $|a|=2$. If it were to be $1$ it would mean that $a=1$ and it can't be $4$.
+    Now $ab=c$ as $ab=1,a,b$ would all lead to trivial contradiction. Doing mere simple calculation we can find out the group table
+    for this group which is,
+        \[
+    \begin{array}{c|cccc}
+    \cdot & 1 & a & b & c \\ \hline
+    1 & 1 & a & b & c \\
+    a & a & 1 & c & b \\
+    b & b & c & 1 & a \\
+    c & c & b & a & 1
+    \end{array}
+\]
+Since the table is symmetric its abelian.
 \end{proof}
