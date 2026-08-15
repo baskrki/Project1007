@@ -351,3 +351,18 @@
     And since $C$ is a subgroup we have 
     \[ |x|=n=|C| \le |G| \]
 \end{proof}
+
+\begin{problem}
+    Let $x$ be an element of finite order $n$ in $G$.
+    \begin{enumerate}
+        \item Prove that if $n$ is odd then $x^i \neq x^{-i}$ for all $i = 1, 2, \dots, n-1$.
+        \item Prove that if $n = 2k$ and $1 \le i < n$ then $x^i = x^{-i}$ if and only if $i = k$.
+    \end{enumerate}
+\end{problem}
+
+\begin{proof}
+    If $n$ is odd and $x^{i} = x^{-i}$ then $x^{2i}=1$ which implies $n \mid 2i \implies n \mid i$
+    but thats not possible as $i < n$.
+
+    If $n=2k$ and $x^{i}=x^{-i} \Rightarrow x^{2i}=1$ which implies $2k \mid 2i$ and since $2 \le 2i < 2n$ we have $2i=n$.
+\end{proof}
