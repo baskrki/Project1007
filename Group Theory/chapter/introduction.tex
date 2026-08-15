@@ -262,3 +262,67 @@
     \[ x^{n} \cdot x^{-n} = x^{n-n}=1 \]
     Also it's closed as $x^k \cdot x^{\ell} = x^{k+\ell} \in C$.
 \end{proof}
+
+\begin{problem}
+    Let $(A, *)$ and $(B, \circ)$ be groups and let $A \times B$ be their direct product. Verify all the group axioms for $A \times B$:
+    \begin{enumerate}
+        \item Prove that the associative law holds: for all $(a_i, b_i) \in A \times B, i=1,2,3$,\\
+        $(a_1, b_1)[(a_2, b_2)(a_3, b_3)] = [(a_1, b_1)(a_2, b_2)](a_3, b_3)$,
+        \item Prove that $(1, 1)$ is the identity of $A \times B$, and
+        \item Prove that the inverse of $(a, b)$ is $(a^{-1}, b^{-1})$.
+    \end{enumerate}
+\end{problem}
+
+\begin{proof}
+    It's just the matter of calculation.
+\end{proof}
+
+\begin{problem}
+     Prove that $A \times B$ is an abelian group if and only if both $A$ and $B$ are abelian.
+\end{problem}
+
+\begin{proof}
+    Suppose $A \times B$ is abelian then,
+    \begin{align*}
+        (a,b)(c,d) &= (c,d)(a,b) \\
+        (a * c, b \circ d) &= (c * a,d \circ b) \\
+    \end{align*}
+    Thus $a*c=c*a$ and $b \circ d = d \circ b$. Therefore, both $A$ and $B$ are abelian.
+
+    And if $A$ and $B$ are abelian then
+    \begin{align*}
+        (a,b)(c,d) &= (a * c, b \circ d) \\
+        &= (c * a, d \circ b) \\
+        &= (c,d)(a,b)
+    \end{align*}
+\end{proof}
+
+\begin{problem}
+    Suppose $G$ is a group and $|x|=n < \infty$. If $x^a = 1$ then $n \mid a$. 
+\end{problem}
+
+\begin{proof}
+    Using the Euclidian algorithm we get,
+    \[ a=nq+r \]
+    where $0 \le r < n$
+    Then,
+    \[ x^a = x^{nq+r} = x^{r} = 1 \]
+    But that's a contradiction unless $r=0$. 
+\end{proof}
+
+\begin{problem}
+    Prove that the elements $(a, 1)$ and $(1, b)$ of $A \times B$ commute and deduce that the order of $(a, b)$ is the least common 
+    multiple of $|a|$ and $|b|$.
+\end{problem}
+
+\begin{proof}
+    For the first statement, 
+    \[ (a,1)(1,b) = (a*1,1 \circ b) = (1*a,b \circ 1) = (1,b)(a,1) \]
+    Now, suppose $|(a,b)|=n$ then,
+    \begin{align*}
+        (a,b)^n &= (1,1) \\
+        \implies (a^n,b^n) &= (1,1) \\
+    \end{align*}
+    Thus, $a^n=1$ and $b^n=1$. Therefore, $n \mid |a|$ and $n \mid |b|$. Thus, $n \mid \text{lcm}(|a|,|b|)$ which implies that
+    $n \ge \text{lcm}(|a|,|b|)$. Now, $n=\text{lcm}(|a|,|b|)$ satisfies $(a,b)^n=(1,1)$. 
+\end{proof}
